@@ -15,7 +15,7 @@ const SchematicWrapped  =  ({children} : {children: React.ReactNode}) =>  {
      useEffect(()=> {
     const userName = user?.username ??
     user?.fullName ??
-    user?.emailAddress[0]?.emailAddress ?? 
+    user?.emailAddresses[0]?.emailAddress ?? 
     user?.id;
     
     if(user?.id) {
